@@ -16,7 +16,7 @@ def tab1_modifier(self):
     left_layout.addWidget(QtWidgets.QLabel("<host>:<port>"))
     left_layout.addWidget(self.tab1_modifier_request_host_port)
     self.tab1_modifier_request_password = QtWidgets.QLineEdit("")
-    left_layout.addWidget(QtWidgets.QLabel("If Using Proxy Authorization Header Enter Password"))
+    left_layout.addWidget(QtWidgets.QLabel("If Using 'Proxy Authorization' or 'Authorization' Header Enter Password"))
     left_layout.addWidget(self.tab1_modifier_request_password)
     self.tab1_modifier_request_enable_tls = QtWidgets.QCheckBox("Enable TLS")
     left_layout.addWidget(self.tab1_modifier_request_enable_tls)
@@ -173,4 +173,5 @@ class Color(QtWidgets.QWidget):
         palette = self.palette()
         palette.setColor(QtGui.QPalette.ColorRole.Window, QtGui.QColor(color))
         self.setPalette(palette)
+
 
